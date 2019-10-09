@@ -75,14 +75,16 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)opencv\include;$(SolutionDir)opencv\include\opencv;$(SolutionDir)opencv\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)opencv\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\opencv\build\include\opencv2;C:\opencv\build\include\opencv;C:\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)opencv\include\opencv;$(SolutionDir)opencv\include\opencv2;$(SolutionDir)opencv\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)opencv\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
