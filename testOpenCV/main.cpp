@@ -12,8 +12,8 @@ int main(int argc, char* argv[])
 	//imgPath = argv[1];
 	//5--相对路径（与工程文件在一个文件夹）
 	//imgPath = "lost.jpg";
-	Mat imgLost = imread("D:/work/testOpenCV/lost.jpg");
-	Mat imgLena = imread("D:/work/testOpenCV/lena.jpg");
+	Mat imgLost = imread("lost.jpg");
+	Mat imgLena = imread("lena.jpg");
 	if (imgLost.empty() || imgLena.empty())
 	{
 		cout << "Image can not read." << endl;
